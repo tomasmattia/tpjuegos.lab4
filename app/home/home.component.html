@@ -1,0 +1,15 @@
+<mat-card  class="user-card">
+  <p>Correo: {{this.datosJugador.correo}}</p>
+  <button mat-raised-button color="primary" (click)="Deslogearse()">Deslogearse</button>
+  <button mat-raised-button color="warn" [routerLink]="['/estadistica']">Estadisticas</button>
+</mat-card>
+<mat-card  class="example-card">
+  <h3>Juegos</h3>
+  <div class="example-button-row">
+    <button mat-raised-button color="primary" [routerLink]="['/anagrama']">Anagrama</button><br>
+    <button mat-raised-button color="primary" [routerLink]="['/piepati']">Piedra Papel Tijera</button><br>
+    <button mat-raised-button color="primary" [routerLink]="['/agiarit']">Agilidad Aritmetica</button><br>
+    <button mat-raised-button color="primary" [routerLink]="['/adivina']">Adivina Numero</button><br>
+    <button mat-raised-button color="primary" [routerLink]="['/sorpresa']">Juego Sorpresa</button>
+  </div>
+</mat-card>

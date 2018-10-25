@@ -1,0 +1,21 @@
+.example-button-row button,
+.example-button-row a {
+  background-color: #FE4A49;
+  margin-bottom: 10px;
+}
+
+h3,
+.example-button-row{
+  text-align: center;
+}
+
+.example-card{
+  width: 50%;
+  margin: auto;
+}
+
+.user-card{
+  width: 50%;
+  margin: auto;
+  margin-bottom: 5px;
+}

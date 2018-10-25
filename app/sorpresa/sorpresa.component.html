@@ -1,0 +1,13 @@
+<mat-card  class="example-card">
+  <h1>Juego sorpresa</h1>
+    <h3>Con que club se asocia este jugador {{this.eleccion}}</h3>
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="El club es.." value="" [(ngModel)]="eleccionUser" [ngModelOptions]="{standalone: true}">
+    </mat-form-field>
+    <br>
+    <mat-card style='background-color: red;' *ngIf="this.resultadoMal">Fallaste lo correcto era {{this.resultados[this.numero]}}</mat-card>
+    <mat-card style='background-color: green;' *ngIf="this.resultadoBien">Acertaste</mat-card>
+    <br>
+    <button mat-flat-button *ngIf="this.estado" (click)="Resolver()">Enviar</button>
+    <button mat-flat-button [routerLink]="['/home']" style="margin-left:5px;background-color: crimson;">Volver</button>
+</mat-card>

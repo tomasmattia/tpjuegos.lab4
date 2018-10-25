@@ -1,0 +1,18 @@
+<form class="example-form">
+  <mat-card  class="example-card">
+      
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Usuario" value="" [(ngModel)]="nombre" [ngModelOptions]="{standalone: true}">
+    </mat-form-field>
+  
+    <mat-form-field class="example-full-width">
+      <input type="password" matInput placeholder="Password" value="" [(ngModel)]="clave" [ngModelOptions]="{standalone: true}">
+    </mat-form-field>
+  
+    <mat-form-field class="example-full-width">
+      <input type="email" matInput placeholder="Email" value="" [(ngModel)]="correo" [ngModelOptions]="{standalone: true}">
+    </mat-form-field>
+    <button mat-flat-button (click)="MostrarRegistro()">Registrarse</button>
+    <button style="margin-left:10px" mat-flat-button (click)="IrLogin()">Ir al Login</button>
+  </mat-card>
+</form>
